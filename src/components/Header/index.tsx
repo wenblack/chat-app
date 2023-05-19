@@ -3,20 +3,20 @@ import { Plus, Pencil, Trash, SearchIcon } from "lucide-react"
 
 export function Header() {
     return (
-        <header className="w-screen  max-w-sm p-4 bg-[#16151e]  h-full">
+        <header className=" z-1 w-full fixed md:max-w-sm p-4 bg-[#16151e] h-40">
             <nav className="flex items-center justify-between">
                 <h2 className="text-xl font-bold text-slate-50">Meus contatos</h2>
 
                 <ul className="flex items-center">
-                    <li className="mr-2">
+                    <li className="mr-2 hover:cursor-pointer hover:opacity-70">
                         <Plus name="add" color="#e1e1e6"></Plus>
                     </li>
 
-                    <li className="mr-2">
+                    <li className="mr-2 hover:cursor-pointer hover:opacity-70">
                         <Pencil name="pencil" color="#e1e1e6"></Pencil>
                     </li>
 
-                    <li className="mr-2">
+                    <li className="mr-2 hover:cursor-pointer hover:opacity-70">
                         <Trash name="trash" color="#e1e1e6"></Trash>
                     </li>
                 </ul>
